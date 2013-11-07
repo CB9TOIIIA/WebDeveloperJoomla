@@ -3220,6 +3220,7 @@ $(function()
   $("#joomla-gskinner").append(WebDeveloper.Locales.getString("joomlagskinner")).on("click", WebDeveloper.Overlay.Tools.joomlagskinner);
   $("#joomla-functions").append(WebDeveloper.Locales.getString("joomlafunctions")).on("click", WebDeveloper.Overlay.Tools.joomlafunctions);
   $("#joomla-asci").append(WebDeveloper.Locales.getString("joomlaasci")).on("click", WebDeveloper.Overlay.Tools.joomlaasci);
+  $("#joomla-codebeautify").append(WebDeveloper.Locales.getString("joomlacodebeautify")).on("click", WebDeveloper.Overlay.Tools.joomlacodebeautify);
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -3384,6 +3385,16 @@ WebDeveloper.Overlay.Tools.joomlabase64de = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("http://www.base64decode.org/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlacodebeautify = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://codebeautify.org/", featureItem);
         });
 };
 
