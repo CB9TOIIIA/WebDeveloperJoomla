@@ -3221,6 +3221,7 @@ $(function()
   $("#joomla-functions").append(WebDeveloper.Locales.getString("joomlafunctions")).on("click", WebDeveloper.Overlay.Tools.joomlafunctions);
   $("#joomla-asci").append(WebDeveloper.Locales.getString("joomlaasci")).on("click", WebDeveloper.Overlay.Tools.joomlaasci);
   $("#joomla-codebeautify").append(WebDeveloper.Locales.getString("joomlacodebeautify")).on("click", WebDeveloper.Overlay.Tools.joomlacodebeautify);
+  $("#joomla-bearcss").append(WebDeveloper.Locales.getString("joomlabearcss")).on("click", WebDeveloper.Overlay.Tools.joomlabearcss);
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -3395,6 +3396,18 @@ WebDeveloper.Overlay.Tools.joomlacodebeautify = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("http://codebeautify.org/", featureItem);
+        });
+};
+
+
+
+WebDeveloper.Overlay.Tools.joomlabearcss = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://bearcss.com/", featureItem);
         });
 };
 
