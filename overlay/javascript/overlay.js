@@ -3222,6 +3222,9 @@ $(function()
   $("#joomla-asci").append(WebDeveloper.Locales.getString("joomlaasci")).on("click", WebDeveloper.Overlay.Tools.joomlaasci);
   $("#joomla-codebeautify").append(WebDeveloper.Locales.getString("joomlacodebeautify")).on("click", WebDeveloper.Overlay.Tools.joomlacodebeautify);
   $("#joomla-bearcss").append(WebDeveloper.Locales.getString("joomlabearcss")).on("click", WebDeveloper.Overlay.Tools.joomlabearcss);
+  $("#joomla-htmljs").append(WebDeveloper.Locales.getString("joomlahtmljs")).on("click", WebDeveloper.Overlay.Tools.joomlahtmljs);
+
+
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -3450,6 +3453,17 @@ WebDeveloper.Overlay.Tools.joomlaregexpal = function()
                 WebDeveloper.Overlay.openTab("http://regexpal.com/", featureItem);
         });
 };
+
+WebDeveloper.Overlay.Tools.joomlahtmljs = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://accessify.com/tools-and-wizards/developer-tools/html-javascript-convertor/", featureItem);
+        });
+};
+
 
 
 WebDeveloper.Overlay.Tools.joomlagskinner = function()
