@@ -3224,6 +3224,7 @@ $(function()
   $("#joomla-bearcss").append(WebDeveloper.Locales.getString("joomlabearcss")).on("click", WebDeveloper.Overlay.Tools.joomlabearcss);
   $("#joomla-htmljs").append(WebDeveloper.Locales.getString("joomlahtmljs")).on("click", WebDeveloper.Overlay.Tools.joomlahtmljs);
   $("#joomla-base64image").append(WebDeveloper.Locales.getString("joomlabase64image")).on("click", WebDeveloper.Overlay.Tools.joomlabase64image);
+  $("#joomla-ish").append(WebDeveloper.Locales.getString("joomlaish")).on("click", WebDeveloper.Overlay.Tools.joomlaish);
 
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
@@ -3381,6 +3382,20 @@ WebDeveloper.Overlay.Tools.joomlapingdom = function()
                 WebDeveloper.Overlay.openTab("http://tools.pingdom.com/fpt/#/" + getCurrentHostWithProtocol(tab.url), featureItem);
         });
 };
+
+
+WebDeveloper.Overlay.Tools.joomlaish = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://bradfrostweb.com/demo/ish/?url=" + getCurrentHostWithProtocol(tab.url), featureItem);
+        });
+};
+
+
+
 
 WebDeveloper.Overlay.Tools.joomlabase64de = function()
 {
