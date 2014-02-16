@@ -3181,6 +3181,21 @@ var WebDeveloper = WebDeveloper || {};
 WebDeveloper.Overlay       = WebDeveloper.Overlay || {};
 WebDeveloper.Overlay.Tools = WebDeveloper.Overlay.Tools || {};
 
+
+
+/*****************************************************************************************************
+                      _  ____   ____  __  __ _                __      __     _____  
+                     | |/ __ \ / __ \|  \/  | |        /\     \ \    / /\   |  __ \ 
+                     | | |  | | |  | | \  / | |       /  \     \ \  / /  \  | |__) |
+                 _   | | |  | | |  | | |\/| | |      / /\ \     \ \/ / /\ \ |  _  / 
+                | |__| | |__| | |__| | |  | | |____ / ____ \     \  / ____ \| | \ \ 
+                 \____/ \____/ \____/|_|  |_|______/_/    \_\     \/_/    \_\_|  \_\
+
+
+
+******************************************************************************************************/
+
+
 $(function()
 {
   $("#edit-tools").append(WebDeveloper.Locales.getString("editTools")).on("click", WebDeveloper.Overlay.Tools.editTools);
@@ -3225,7 +3240,17 @@ $(function()
   $("#joomla-htmljs").append(WebDeveloper.Locales.getString("joomlahtmljs")).on("click", WebDeveloper.Overlay.Tools.joomlahtmljs);
   $("#joomla-base64image").append(WebDeveloper.Locales.getString("joomlabase64image")).on("click", WebDeveloper.Overlay.Tools.joomlabase64image);
   $("#joomla-ish").append(WebDeveloper.Locales.getString("joomlaish")).on("click", WebDeveloper.Overlay.Tools.joomlaish);
-
+  $("#joomla-antialarm").append(WebDeveloper.Locales.getString("joomlaantialarm")).on("click", WebDeveloper.Overlay.Tools.joomlaantialarm);
+  $("#joomla-httphead").append(WebDeveloper.Locales.getString("joomlahttphead")).on("click", WebDeveloper.Overlay.Tools.joomlahttphead);
+  $("#joomla-kraken").append(WebDeveloper.Locales.getString("joomlakraken")).on("click", WebDeveloper.Overlay.Tools.joomlakraken);
+  $("#joomla-jpegmini").append(WebDeveloper.Locales.getString("joomlajpegmini")).on("click", WebDeveloper.Overlay.Tools.joomlajpegmini);
+  $("#joomla-tinypng").append(WebDeveloper.Locales.getString("joomlatinypng")).on("click", WebDeveloper.Overlay.Tools.joomlatinypng);
+  $("#joomla-punypng").append(WebDeveloper.Locales.getString("joomlapunypng")).on("click", WebDeveloper.Overlay.Tools.joomlapunypng);
+  $("#joomla-ysmush").append(WebDeveloper.Locales.getString("joomlaysmush")).on("click", WebDeveloper.Overlay.Tools.joomlaysmush);
+  $("#joomla-b64").append(WebDeveloper.Locales.getString("joomlab64")).on("click", WebDeveloper.Overlay.Tools.joomlab64);
+  $("#joomla-yandexweb").append(WebDeveloper.Locales.getString("joomlayandexweb")).on("click", WebDeveloper.Overlay.Tools.joomlayandexweb);
+  $("#joomla-googleweb").append(WebDeveloper.Locales.getString("joomlagoogleweb")).on("click", WebDeveloper.Overlay.Tools.joomlagoogleweb);
+  $("#joomla-mailruweb").append(WebDeveloper.Locales.getString("joomlamailruweb")).on("click", WebDeveloper.Overlay.Tools.joomlamailruweb);
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -3394,8 +3419,26 @@ WebDeveloper.Overlay.Tools.joomlaish = function()
         });
 };
 
+WebDeveloper.Overlay.Tools.joomlaantialarm = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://antivirus-alarm.ru/proverka/?url=" + getCurrentHostWithProtocol(tab.url), featureItem);
+        });
+};
 
 
+WebDeveloper.Overlay.Tools.joomlahttphead = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.bertal.ru/index.php?a/" + getCurrentHostWithProtocol(tab.url), featureItem);
+        });
+};
 
 WebDeveloper.Overlay.Tools.joomlabase64de = function()
 {
@@ -3407,6 +3450,37 @@ WebDeveloper.Overlay.Tools.joomlabase64de = function()
         });
 };
 
+WebDeveloper.Overlay.Tools.joomlayandexweb = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://webmaster.yandex.ru/sites/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlagoogleweb = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://www.google.com/webmasters/tools/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlamailruweb = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://webmaster.mail.ru/", featureItem);
+        });
+};
 
 WebDeveloper.Overlay.Tools.joomlabase64image = function()
 {
@@ -3430,6 +3504,67 @@ WebDeveloper.Overlay.Tools.joomlacodebeautify = function()
 };
 
 
+WebDeveloper.Overlay.Tools.joomlakraken = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://kraken.io/web-interface/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlajpegmini = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.jpegmini.com/main/shrink_photo", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlatinypng = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://tinypng.com/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlab64 = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://b64.io/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlapunypng = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.punypng.com/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaysmush = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.smushit.com/ysmush.it/", featureItem);
+        });
+};
 
 WebDeveloper.Overlay.Tools.joomlabearcss = function()
 {
