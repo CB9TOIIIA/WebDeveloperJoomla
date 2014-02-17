@@ -3370,7 +3370,7 @@ WebDeveloper.Overlay.Tools.joomlaconfig = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab(tab.url + "administrator/index.php?option=com_config", featureItem);
+                WebDeveloper.Overlay.openTab(getCurrentHostWithProtocol(tab.url) + "administrator/index.php?option=com_config", featureItem);
         });
 };
 
