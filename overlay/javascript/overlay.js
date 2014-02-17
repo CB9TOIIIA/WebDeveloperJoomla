@@ -3251,7 +3251,14 @@ $(function()
   $("#joomla-yandexweb").append(WebDeveloper.Locales.getString("joomlayandexweb")).on("click", WebDeveloper.Overlay.Tools.joomlayandexweb);
   $("#joomla-googleweb").append(WebDeveloper.Locales.getString("joomlagoogleweb")).on("click", WebDeveloper.Overlay.Tools.joomlagoogleweb);
   $("#joomla-mailruweb").append(WebDeveloper.Locales.getString("joomlamailruweb")).on("click", WebDeveloper.Overlay.Tools.joomlamailruweb);
-
+  $("#joomla-sucuri").append(WebDeveloper.Locales.getString("joomlasucuri")).on("click", WebDeveloper.Overlay.Tools.joomlasucuri);
+  $("#joomla-cloudconvert").append(WebDeveloper.Locales.getString("joomlacloudconvert")).on("click", WebDeveloper.Overlay.Tools.joomlacloudconvert);
+  $("#joomla-prlog").append(WebDeveloper.Locales.getString("joomlaprlog")).on("click", WebDeveloper.Overlay.Tools.joomlaprlog);
+  $("#joomla-seobuilding").append(WebDeveloper.Locales.getString("joomlaseobuilding")).on("click", WebDeveloper.Overlay.Tools.joomlaseobuilding);
+  $("#joomla-yacheckurl").append(WebDeveloper.Locales.getString("joomlayacheckurl")).on("click", WebDeveloper.Overlay.Tools.joomlayacheckurl);
+  $("#joomla-emegaindex").append(WebDeveloper.Locales.getString("joomlaemegaindex")).on("click", WebDeveloper.Overlay.Tools.joomlaemegaindex);
+  $("#joomla-escapingregexp").append(WebDeveloper.Locales.getString("joomlaescapingregexp")).on("click", WebDeveloper.Overlay.Tools.joomlaescapingregexp);
+  
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
 
@@ -3425,7 +3432,58 @@ WebDeveloper.Overlay.Tools.joomlaantialarm = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://antivirus-alarm.ru/proverka/?url=" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://antivirus-alarm.ru/proverka/?url=" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaprlog = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://prlog.ru/analysis/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaseobuilding = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.seobuilding.ru/audit/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaemegaindex = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://e.megaindex.ru/analysis/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlayacheckurl = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://webmaster.yandex.ru/site/check_url.xml", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlasucuri = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://sitecheck.sucuri.net/results/" + getCurrentHostWithHost(tab.url), featureItem);
         });
 };
 
@@ -3481,6 +3539,17 @@ WebDeveloper.Overlay.Tools.joomlamailruweb = function()
                 WebDeveloper.Overlay.openTab("http://webmaster.mail.ru/", featureItem);
         });
 };
+
+WebDeveloper.Overlay.Tools.joomlaescapingregexp = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://help.cb9t.ru/ekranirovanie-regexp.html", featureItem);
+        });
+};
+
 
 WebDeveloper.Overlay.Tools.joomlabase64image = function()
 {
@@ -3635,6 +3704,16 @@ WebDeveloper.Overlay.Tools.joomlagskinner = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("http://gskinner.com/RegExr/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlacloudconvert = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://cloudconvert.org/", featureItem);
         });
 };
 
