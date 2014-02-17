@@ -3258,7 +3258,11 @@ $(function()
   $("#joomla-yacheckurl").append(WebDeveloper.Locales.getString("joomlayacheckurl")).on("click", WebDeveloper.Overlay.Tools.joomlayacheckurl);
   $("#joomla-emegaindex").append(WebDeveloper.Locales.getString("joomlaemegaindex")).on("click", WebDeveloper.Overlay.Tools.joomlaemegaindex);
   $("#joomla-escapingregexp").append(WebDeveloper.Locales.getString("joomlaescapingregexp")).on("click", WebDeveloper.Overlay.Tools.joomlaescapingregexp);
+  $("#joomla-bing").append(WebDeveloper.Locales.getString("joomlabing")).on("click", WebDeveloper.Overlay.Tools.joomlabing);
+  $("#joomla-metaua").append(WebDeveloper.Locales.getString("joomlametaua")).on("click", WebDeveloper.Overlay.Tools.joomlametaua);
+  $("#joomla-config").append(WebDeveloper.Locales.getString("joomlaconfig")).on("click", WebDeveloper.Overlay.Tools.joomlaconfig);
   
+
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
 
@@ -3358,6 +3362,19 @@ WebDeveloper.Overlay.Tools.joomlatp1 = function()
         });
 };
  
+
+  
+WebDeveloper.Overlay.Tools.joomlaconfig = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab(tab.url + "administrator/index.php?option=com_config", featureItem);
+        });
+};
+
+
 WebDeveloper.Overlay.Tools.joomlatp = function()
 {
  var featureItem = $(this);
@@ -3539,6 +3556,28 @@ WebDeveloper.Overlay.Tools.joomlamailruweb = function()
                 WebDeveloper.Overlay.openTab("http://webmaster.mail.ru/", featureItem);
         });
 };
+
+
+WebDeveloper.Overlay.Tools.joomlametaua = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://web.meta.ua/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlabing = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://ssl.bing.com/webmaster/home/mysites", featureItem);
+        });
+};
+
 
 WebDeveloper.Overlay.Tools.joomlaescapingregexp = function()
 {
