@@ -3261,7 +3261,18 @@ $(function()
   $("#joomla-bing").append(WebDeveloper.Locales.getString("joomlabing")).on("click", WebDeveloper.Overlay.Tools.joomlabing);
   $("#joomla-metaua").append(WebDeveloper.Locales.getString("joomlametaua")).on("click", WebDeveloper.Overlay.Tools.joomlametaua);
   $("#joomla-config").append(WebDeveloper.Locales.getString("joomlaconfig")).on("click", WebDeveloper.Overlay.Tools.joomlaconfig);
-  
+  $("#joomla-checkversion").append(WebDeveloper.Locales.getString("joomlacheckversion")).on("click", WebDeveloper.Overlay.Tools.joomlacheckversion);
+  $("#joomla-enjoycss").append(WebDeveloper.Locales.getString("joomlaenjoycss")).on("click", WebDeveloper.Overlay.Tools.joomlaenjoycss);
+  $("#joomla-emulators").append(WebDeveloper.Locales.getString("joomlaemulators")).on("click", WebDeveloper.Overlay.Tools.joomlaemulators);
+  $("#joomla-phpliveregex").append(WebDeveloper.Locales.getString("joomlaphpliveregex")).on("click", WebDeveloper.Overlay.Tools.joomlaphpliveregex);
+  $("#joomla-unphp").append(WebDeveloper.Locales.getString("joomlaunphp")).on("click", WebDeveloper.Overlay.Tools.joomlaunphp);
+  $("#joomla-jsparse").append(WebDeveloper.Locales.getString("joomlajsparse")).on("click", WebDeveloper.Overlay.Tools.joomlajsparse);
+  $("#joomla-pixlr").append(WebDeveloper.Locales.getString("joomlapixlr")).on("click", WebDeveloper.Overlay.Tools.joomlapixlr);
+  $("#joomla-yago").append(WebDeveloper.Locales.getString("joomlayago")).on("click", WebDeveloper.Overlay.Tools.joomlayago);
+  $("#joomla-kashkovskiy").append(WebDeveloper.Locales.getString("joomlakashkovskiy")).on("click", WebDeveloper.Overlay.Tools.joomlakashkovskiy);
+  $("#joomla-fastkeywords").append(WebDeveloper.Locales.getString("joomlafastkeywords")).on("click", WebDeveloper.Overlay.Tools.joomlafastkeywords);
+  $("#joomla-toolsion").append(WebDeveloper.Locales.getString("joomlatoolsion")).on("click", WebDeveloper.Overlay.Tools.joomlatoolsion);
+
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -3964,3 +3975,114 @@ WebDeveloper.Overlay.Tools.adddel = function()
  });
 };
 
+
+WebDeveloper.Overlay.Tools.joomlacheckversion = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab(getCurrentHostWithProtocol(tab.url) + "/language/en-GB/en-GB.xml", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaenjoycss = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://enjoycss.com/start/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaemulators = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://www.manymo.com/emulators", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaphpliveregex = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://phpliveregex.com/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaunphp = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://phpliveregex.com/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlajsparse = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://esprima.org/demo/parse.html", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlapixlr = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://pixlr.com/editor/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlayago = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://zorrobot.ru/tool/yago.php", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlakashkovskiy = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://kashkovskiy.ru/sbor-pozicij-yandex/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlafastkeywords = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://fastkeywords.biz/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlatoolsion = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://toolsion.com/ru/analysis/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
