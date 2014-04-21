@@ -3272,7 +3272,16 @@ $(function()
   $("#joomla-kashkovskiy").append(WebDeveloper.Locales.getString("joomlakashkovskiy")).on("click", WebDeveloper.Overlay.Tools.joomlakashkovskiy);
   $("#joomla-fastkeywords").append(WebDeveloper.Locales.getString("joomlafastkeywords")).on("click", WebDeveloper.Overlay.Tools.joomlafastkeywords);
   $("#joomla-toolsion").append(WebDeveloper.Locales.getString("joomlatoolsion")).on("click", WebDeveloper.Overlay.Tools.joomlatoolsion);
-
+  $("#joomla-checkvisit").append(WebDeveloper.Locales.getString("joomlacheckvisit")).on("click", WebDeveloper.Overlay.Tools.joomlacheckvisit);
+  $("#joomla-contentwatch").append(WebDeveloper.Locales.getString("joomlacontentwatch")).on("click", WebDeveloper.Overlay.Tools.joomlacontentwatch);
+  $("#joomla-prcyunique").append(WebDeveloper.Locales.getString("joomlaprcyunique")).on("click", WebDeveloper.Overlay.Tools.joomlaprcyunique);
+  $("#joomla-textrucheck").append(WebDeveloper.Locales.getString("joomlatextrucheck")).on("click", WebDeveloper.Overlay.Tools.joomlatextrucheck);
+  $("#joomla-copyscape").append(WebDeveloper.Locales.getString("joomlacopyscape")).on("click", WebDeveloper.Overlay.Tools.joomlacopyscape);
+  $("#joomla-prcyanalysis").append(WebDeveloper.Locales.getString("joomlaprcyanalysis")).on("click", WebDeveloper.Overlay.Tools.joomlaprcyanalysis);
+  $("#joomla-keyworddensity").append(WebDeveloper.Locales.getString("joomlakeyworddensity")).on("click", WebDeveloper.Overlay.Tools.joomlakeyworddensity);
+  $("#joomla-seoppageanalyzer").append(WebDeveloper.Locales.getString("joomlaseoppageanalyzer")).on("click", WebDeveloper.Overlay.Tools.joomlaseoppageanalyzer);
+  $("#joomla-htmltojavascript").append(WebDeveloper.Locales.getString("joomlahtmltojavascript")).on("click", WebDeveloper.Overlay.Tools.joomlahtmltojavascript);
+  $("#joomla-clippingmagic").append(WebDeveloper.Locales.getString("joomlaclippingmagic")).on("click", WebDeveloper.Overlay.Tools.joomlaclippingmagic);
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -3429,7 +3438,7 @@ WebDeveloper.Overlay.Tools.joomlagoogle = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://developers.google.com/speed/pagespeed/insights/?url=" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://developers.google.com/speed/pagespeed/insights/?url=" + tab.url, featureItem);
         });
 };
  
@@ -3439,7 +3448,7 @@ WebDeveloper.Overlay.Tools.joomlapingdom = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://tools.pingdom.com/fpt/#/" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://tools.pingdom.com/fpt/#/"  + tab.url, featureItem);
         });
 };
 
@@ -3450,7 +3459,7 @@ WebDeveloper.Overlay.Tools.joomlaish = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://bradfrostweb.com/demo/ish/?url=" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://bradfrostweb.com/demo/ish/?url="   + tab.url, featureItem);
         });
 };
 
@@ -3522,7 +3531,7 @@ WebDeveloper.Overlay.Tools.joomlahttphead = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://www.bertal.ru/index.php?a/" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://www.bertal.ru/index.php?a/"  + tab.url, featureItem);
         });
 };
 
@@ -3784,7 +3793,7 @@ WebDeveloper.Overlay.Tools.joomlaquirktools = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://quirktools.com/screenfly/#u=" + getCurrentHostWithProtocol(tab.url) + '&w=1024&h=600', featureItem);
+                WebDeveloper.Overlay.openTab("http://quirktools.com/screenfly/#u=" + tab.url + '&w=1024&h=600', featureItem);
         });
 };
 
@@ -3794,7 +3803,7 @@ WebDeveloper.Overlay.Tools.joomlatransmog = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://transmog.net/iphone-simulator/mobile-web-browser-emulator.php?u=" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://transmog.net/iphone-simulator/mobile-web-browser-emulator.php?u="   + tab.url, featureItem);
         });
 };
 
@@ -3804,7 +3813,7 @@ WebDeveloper.Overlay.Tools.joomlamobiletest = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://mobiletest.me/#u=" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://mobiletest.me/iphone_5_emulator/#u="   + tab.url, featureItem);
         });
 };
 
@@ -3816,7 +3825,7 @@ WebDeveloper.Overlay.Tools.joomlaresponsivedesign = function()
  
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
-                WebDeveloper.Overlay.openTab("http://ami.responsivedesign.is/?url=" + getCurrentHostWithProtocol(tab.url), featureItem);
+                WebDeveloper.Overlay.openTab("http://ami.responsivedesign.is/?url="   + tab.url, featureItem);
         });
 };
 
@@ -4084,5 +4093,105 @@ WebDeveloper.Overlay.Tools.joomlatoolsion = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("https://toolsion.com/ru/analysis/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlacheckvisit = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://seogift.ru/seo-checkvisit/" , featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlacontentwatch = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://content-watch.ru/text/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaprcyunique = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://pr-cy.ru/unique/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlatextrucheck = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://text.ru/text_check", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlacopyscape = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.copyscape.com/?q=" + tab.url, featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaprcyanalysis = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://pr-cy.ru/analysis_content?url=" + tab.url, featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlakeyworddensity = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://seogift.ru/content-analiz/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaseoppageanalyzer = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.seop.ru/services/page_analyzer_2.html", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlahtmltojavascript = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://seogift.ru/htmltojavascript/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaclippingmagic = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://clippingmagic.com/", featureItem);
         });
 };
