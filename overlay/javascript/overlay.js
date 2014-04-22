@@ -3282,6 +3282,18 @@ $(function()
   $("#joomla-seoppageanalyzer").append(WebDeveloper.Locales.getString("joomlaseoppageanalyzer")).on("click", WebDeveloper.Overlay.Tools.joomlaseoppageanalyzer);
   $("#joomla-htmltojavascript").append(WebDeveloper.Locales.getString("joomlahtmltojavascript")).on("click", WebDeveloper.Overlay.Tools.joomlahtmltojavascript);
   $("#joomla-clippingmagic").append(WebDeveloper.Locales.getString("joomlaclippingmagic")).on("click", WebDeveloper.Overlay.Tools.joomlaclippingmagic);
+  $("#joomla-optimincode").append(WebDeveloper.Locales.getString("joomlaoptimincode")).on("click", WebDeveloper.Overlay.Tools.joomlaoptimincode);
+  $("#joomla-findcopy").append(WebDeveloper.Locales.getString("joomlafindcopy")).on("click", WebDeveloper.Overlay.Tools.joomlafindcopy);
+  $("#joomla-optimintest").append(WebDeveloper.Locales.getString("joomlaoptimintest")).on("click", WebDeveloper.Overlay.Tools.joomlaoptimintest);
+  $("#joomla-optiminimage").append(WebDeveloper.Locales.getString("joomlaoptiminimage")).on("click", WebDeveloper.Overlay.Tools.joomlaoptiminimage);
+  $("#joomla-jpegreducer").append(WebDeveloper.Locales.getString("joomlajpegreducer")).on("click", WebDeveloper.Overlay.Tools.joomlajpegreducer);
+  $("#joomla-imageoptimizernet").append(WebDeveloper.Locales.getString("joomlaimageoptimizernet")).on("click", WebDeveloper.Overlay.Tools.joomlaimageoptimizernet);
+  $("#joomla-webresizer").append(WebDeveloper.Locales.getString("joomlawebresizer")).on("click", WebDeveloper.Overlay.Tools.joomlawebresizer);
+  $("#joomla-jpegoptimizercom").append(WebDeveloper.Locales.getString("joomlajpegoptimizercom")).on("click", WebDeveloper.Overlay.Tools.joomlajpegoptimizercom);
+  $("#joomla-dynamicdrive").append(WebDeveloper.Locales.getString("joomladynamicdrive")).on("click", WebDeveloper.Overlay.Tools.joomladynamicdrive);
+  $("#joomla-compressnow").append(WebDeveloper.Locales.getString("joomlacompressnow")).on("click", WebDeveloper.Overlay.Tools.joomlacompressnow);
+  $("#joomla-htaccessgenerator").append(WebDeveloper.Locales.getString("joomlahtaccessgenerator")).on("click", WebDeveloper.Overlay.Tools.joomlahtaccessgenerator);
+
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -4193,5 +4205,116 @@ WebDeveloper.Overlay.Tools.joomlaclippingmagic = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("https://clippingmagic.com/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaoptimincode = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://optimin.ru/code/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlafindcopy = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://findcopy.ru/checkUrl", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaoptimintest = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://optimin.ru/test/#url=" + tab.url, featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaoptiminimage = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://optimin.ru/image/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlajpegreducer = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.jpegreducer.com/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlaimageoptimizernet = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.imageoptimizer.net/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlawebresizer = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.webresizer.com/resizer/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlajpegoptimizercom = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://jpeg-optimizer.com/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomladynamicdrive = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://tools.dynamicdrive.com/imageoptimizer/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlacompressnow = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://compressnow.com/", featureItem);
+        });
+};
+WebDeveloper.Overlay.Tools.joomlahtaccessgenerator = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://tools.dynamicdrive.com/password/", featureItem);
         });
 };
