@@ -3293,6 +3293,8 @@ $(function()
   $("#joomla-dynamicdrive").append(WebDeveloper.Locales.getString("joomladynamicdrive")).on("click", WebDeveloper.Overlay.Tools.joomladynamicdrive);
   $("#joomla-compressnow").append(WebDeveloper.Locales.getString("joomlacompressnow")).on("click", WebDeveloper.Overlay.Tools.joomlacompressnow);
   $("#joomla-htaccessgenerator").append(WebDeveloper.Locales.getString("joomlahtaccessgenerator")).on("click", WebDeveloper.Overlay.Tools.joomlahtaccessgenerator);
+  $("#joomla-majentoseo").append(WebDeveloper.Locales.getString("joomlamajentoseo")).on("click", WebDeveloper.Overlay.Tools.joomlamajentoseo);
+  $("#joomla-wordstatio").append(WebDeveloper.Locales.getString("joomlawordstatio")).on("click", WebDeveloper.Overlay.Tools.joomlawordstatio);
 
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
@@ -4316,5 +4318,26 @@ WebDeveloper.Overlay.Tools.joomlahtaccessgenerator = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("http://tools.dynamicdrive.com/password/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlamajentoseo = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.majento.ru/index.php?page=seo-analize/global_site_audit/index&url=" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlawordstatio = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://wordstat.io/search/?q=" + getCurrentHostWithHost(tab.url) + '&search=search_domain', featureItem);
         });
 };

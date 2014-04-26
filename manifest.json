@@ -12,6 +12,6 @@
   "name": "Web Developer Joomla!",
   "options_page":	"options/options.html",
   "permissions": ["clipboardWrite", "contentSettings", "cookies", "history", "proxy", "tabs", "<all_urls>"],
-  "version": "0.4.515",
+  "version": "0.4.520",
   "web_accessible_resources": ["*"]
 }
