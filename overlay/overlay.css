@@ -25,19 +25,22 @@ body, html { overflow: hidden; width: 650px; }
 #outline-toolbar > a > span { background-position: -112px 0; }
 #resize-toolbar > a > span { background-position: -128px 0; }
 #tools-toolbar > a > span { background-position: -144px 0; }
+/*.joomfon {background: url(images/joomfon.png) top center no-repeat transparent; width: 600px; height: 200px; position: absolute; right: 0; bottom: 0;}
+.seofon {background: url(images/seofon.png) top center no-repeat transparent; width: 600px; height: 200px; position: absolute; right: 0; bottom: 0;}
+.servicefon {background: url(images/servicefon.png) top center no-repeat transparent; width: 600px; height: 200px; position: absolute; right: 0; bottom: 0;}*/
 #joomla-menu ul li label span {font-size: 13px !important; line-height: 1 !important; font-weight: normal !important; color: #428bca !important; text-decoration: none; }
 #joomla-menu ul li label span:hover {text-decoration: underline; cursor: pointer;}
-#joomla-menu {margin: 10px 20px;}
+#joomla-menu {margin: 10px 0px 0px 20px; background: url(images/joomfon.png)  bottom right no-repeat transparent;  }
 #joomla-menu ul li label {margin: 0px !important;}
 
 #seo-menu ul li label span {font-size: 13px !important; line-height: 1 !important; font-weight: normal !important; color: #428bca !important; text-decoration: none; }
 #seo-menu ul li label span:hover {text-decoration: underline; cursor: pointer;}
-#seo-menu {margin: 10px 20px;}
+#seo-menu {margin: 10px 0px 0px 20px; background: url(images/seofon.png) bottom right no-repeat transparent;}
 #seo-menu ul li label {margin: 0px !important;}
 
 #services-menu ul li label span {font-size: 13px !important; line-height: 1 !important; font-weight: normal !important; color: #428bca !important; text-decoration: none; }
 #services-menu ul li label span:hover {text-decoration: underline; cursor: pointer;}
-#services-menu {margin: 10px 20px;}
+#services-menu {margin: 10px 0px 0px 20px; background: url(images/servicefon.png) bottom right no-repeat transparent;}
 #services-menu ul li label {margin: 0px !important;}
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5)

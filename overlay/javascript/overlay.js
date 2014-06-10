@@ -3295,7 +3295,13 @@ $(function()
   $("#joomla-htaccessgenerator").append(WebDeveloper.Locales.getString("joomlahtaccessgenerator")).on("click", WebDeveloper.Overlay.Tools.joomlahtaccessgenerator);
   $("#joomla-majentoseo").append(WebDeveloper.Locales.getString("joomlamajentoseo")).on("click", WebDeveloper.Overlay.Tools.joomlamajentoseo);
   $("#joomla-wordstatio").append(WebDeveloper.Locales.getString("joomlawordstatio")).on("click", WebDeveloper.Overlay.Tools.joomlawordstatio);
-
+  $("#joomla-compressor").append(WebDeveloper.Locales.getString("joomlacompressor")).on("click", WebDeveloper.Overlay.Tools.joomlacompressor);
+  $("#joomla-seoinsidevk").append(WebDeveloper.Locales.getString("joomlaseoinsidevk")).on("click", WebDeveloper.Overlay.Tools.joomlaseoinsidevk);
+  $("#joomla-seoinsideyoutube").append(WebDeveloper.Locales.getString("joomlaseoinsideyoutube")).on("click", WebDeveloper.Overlay.Tools.joomlaseoinsideyoutube);
+  $("#joomla-helpcb9txml").append(WebDeveloper.Locales.getString("joomlahelpcb9txml")).on("click", WebDeveloper.Overlay.Tools.joomlahelpcb9txml);
+  $("#joomla-seoanaliticsya").append(WebDeveloper.Locales.getString("joomlaseoanaliticsya")).on("click", WebDeveloper.Overlay.Tools.joomlaseoanaliticsya);
+  
+  
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
@@ -4311,6 +4317,18 @@ WebDeveloper.Overlay.Tools.joomlacompressnow = function()
                 WebDeveloper.Overlay.openTab("http://compressnow.com/", featureItem);
         });
 };
+
+WebDeveloper.Overlay.Tools.joomlacompressor = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://compressor.io/compress", featureItem);
+        });
+};
+
+
 WebDeveloper.Overlay.Tools.joomlahtaccessgenerator = function()
 {
         var featureItem = $(this);
@@ -4339,5 +4357,46 @@ WebDeveloper.Overlay.Tools.joomlawordstatio = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("http://wordstat.io/search/?q=" + getCurrentHostWithHost(tab.url) + '&search=search_domain', featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaseoinsidevk = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://seo-inside.ru/index.php/component/vkgrouppos?url=" + tab.url, featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlaseoinsideyoutube = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://seo-inside.ru//index.php/component/videopos-parser?url=" + tab.url, featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlahelpcb9txml = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://help.cb9t.ru/parsing-sitemap.html", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaseoanaliticsya = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://seoanalitics.ru/audit/yandex-index.php", featureItem);
         });
 };
