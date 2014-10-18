@@ -3300,7 +3300,16 @@ $(function()
   $("#joomla-seoinsideyoutube").append(WebDeveloper.Locales.getString("joomlaseoinsideyoutube")).on("click", WebDeveloper.Overlay.Tools.joomlaseoinsideyoutube);
   $("#joomla-helpcb9txml").append(WebDeveloper.Locales.getString("joomlahelpcb9txml")).on("click", WebDeveloper.Overlay.Tools.joomlahelpcb9txml);
   $("#joomla-seoanaliticsya").append(WebDeveloper.Locales.getString("joomlaseoanaliticsya")).on("click", WebDeveloper.Overlay.Tools.joomlaseoanaliticsya);
-  
+  $("#joomla-linkpad").append(WebDeveloper.Locales.getString("joomlalinkpad")).on("click", WebDeveloper.Overlay.Tools.joomlalinkpad);
+  $("#joomla-siteliner").append(WebDeveloper.Locales.getString("joomlasiteliner")).on("click", WebDeveloper.Overlay.Tools.joomlasiteliner);
+  $("#joomla-quicksprout").append(WebDeveloper.Locales.getString("joomlaquicksprout")).on("click", WebDeveloper.Overlay.Tools.joomlaquicksprout);
+  $("#joomla-geopeeker").append(WebDeveloper.Locales.getString("joomlageopeeker")).on("click", WebDeveloper.Overlay.Tools.joomlageopeeker);
+  $("#joomla-sugger").append(WebDeveloper.Locales.getString("joomlasugger")).on("click", WebDeveloper.Overlay.Tools.joomlasugger);
+  $("#joomla-advodka").append(WebDeveloper.Locales.getString("joomlaadvodka")).on("click", WebDeveloper.Overlay.Tools.joomlaadvodka);  
+  $("#joomla-keywordtool").append(WebDeveloper.Locales.getString("joomlakeywordtool")).on("click", WebDeveloper.Overlay.Tools.joomlakeywordtool); 
+  $("#joomla-redbot").append(WebDeveloper.Locales.getString("joomlaredbot")).on("click", WebDeveloper.Overlay.Tools.joomlaredbot); 
+  $("#joomla-responsiveis").append(WebDeveloper.Locales.getString("joomlaresponsiveis")).on("click", WebDeveloper.Overlay.Tools.joomlaresponsiveis); 
+  $("#joomla-mattkersley").append(WebDeveloper.Locales.getString("joomlamattkersley")).on("click", WebDeveloper.Overlay.Tools.joomlamattkersley); 
   
 
   WebDeveloper.Overlay.Tools.setupCustomTools();
@@ -3391,7 +3400,22 @@ WebDeveloper.Overlay.Tools.viewSource = function()
   });
 };
 
-  
+
+/*****************************************************************************************************
+                 __            
+                /\ \           
+  ___    ___    \_\ \     __   
+ /'___\ / __`\  /'_` \  /'__`\ 
+/\ \__//\ \L\ \/\ \L\ \/\  __/ 
+\ \____\ \____/\ \___,_\ \____\
+ \/____/\/___/  \/__,_ /\/____/
+
+
+******************************************************************************************************/
+
+ 
+ 
+ 
 WebDeveloper.Overlay.Tools.joomlatp1 = function()
 {
         var featureItem = $(this);
@@ -3429,7 +3453,7 @@ WebDeveloper.Overlay.Tools.admin = function()
  var featureItem = $(this);
  WebDeveloper.Overlay.getSelectedTab(function(tab)
  {
-     WebDeveloper.Overlay.openTab(getCurrentHostWithProtocol(tab.url) + "/administrator", featureItem);
+     WebDeveloper.Overlay.openTab(getCurrentHostWithProtocol(tab.url) + "/administrator/index.php", featureItem);
  });
 };
  
@@ -3564,6 +3588,18 @@ WebDeveloper.Overlay.Tools.joomlabase64de = function()
                 WebDeveloper.Overlay.openTab("http://www.base64decode.org/", featureItem);
         });
 };
+
+WebDeveloper.Overlay.Tools.joomlakeywordtool = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://keywordtool.io/ru", featureItem);
+        });
+};
+
+
 
 WebDeveloper.Overlay.Tools.joomlayandexweb = function()
 {
@@ -3724,6 +3760,19 @@ WebDeveloper.Overlay.Tools.joomlabearcss = function()
         });
 };
 
+WebDeveloper.Overlay.Tools.joomlamattkersley = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://mattkersley.com/responsive/?"   + tab.url, featureItem);
+        });
+};
+
+
+
+
 WebDeveloper.Overlay.Tools.joomlamd5 = function()
 {
         var featureItem = $(this);
@@ -3817,6 +3866,8 @@ WebDeveloper.Overlay.Tools.joomlaquirktools = function()
         });
 };
 
+
+
 WebDeveloper.Overlay.Tools.joomlatransmog = function()
 {
         var featureItem = $(this);
@@ -3834,6 +3885,17 @@ WebDeveloper.Overlay.Tools.joomlamobiletest = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("http://mobiletest.me/iphone_5_emulator/#u="   + tab.url, featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlaredbot = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://redbot.org/?uri="   + tab.url, featureItem);
         });
 };
 
@@ -3908,6 +3970,17 @@ function getCurrentHostWithHost(url) {
         });
 };
 
+WebDeveloper.Overlay.Tools.joomlaresponsiveis = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://responsive.is/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+
  WebDeveloper.Overlay.Tools.joomlasemrush = function()
 {
         var featureItem = $(this);
@@ -3928,6 +4001,49 @@ function getCurrentHostWithHost(url) {
                 WebDeveloper.Overlay.openTab("http://www.similarweb.com/search?q=" + getCurrentHostWithHost(tab.url), featureItem);
         });
 };
+
+
+ WebDeveloper.Overlay.Tools.joomlalinkpad = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://www.linkpad.ru/?search=" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+
+ WebDeveloper.Overlay.Tools.joomlasiteliner = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.siteliner.com/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+ WebDeveloper.Overlay.Tools.joomlaquicksprout = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://tools.quicksprout.com/analyze/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+ WebDeveloper.Overlay.Tools.joomlageopeeker = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://geopeeker.com/fetch/?url="   + tab.url, featureItem);
+        });
+};
+
 
 
 WebDeveloper.Overlay.Tools.joomlaardd = function()
@@ -4338,6 +4454,30 @@ WebDeveloper.Overlay.Tools.joomlahtaccessgenerator = function()
                 WebDeveloper.Overlay.openTab("http://tools.dynamicdrive.com/password/", featureItem);
         });
 };
+
+
+WebDeveloper.Overlay.Tools.joomlasugger = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://sugger.ru/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlaadvodka = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("https://advodka.com/domain/" + getCurrentHostWithHost(tab.url), featureItem);
+        });
+};
+
+
 
 WebDeveloper.Overlay.Tools.joomlamajentoseo = function()
 {
