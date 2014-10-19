@@ -3310,8 +3310,32 @@ $(function()
   $("#joomla-redbot").append(WebDeveloper.Locales.getString("joomlaredbot")).on("click", WebDeveloper.Overlay.Tools.joomlaredbot); 
   $("#joomla-responsiveis").append(WebDeveloper.Locales.getString("joomlaresponsiveis")).on("click", WebDeveloper.Overlay.Tools.joomlaresponsiveis); 
   $("#joomla-mattkersley").append(WebDeveloper.Locales.getString("joomlamattkersley")).on("click", WebDeveloper.Overlay.Tools.joomlamattkersley); 
+  $("#joomla-nmsdvid").append(WebDeveloper.Locales.getString("joomlanmsdvid")).on("click", WebDeveloper.Overlay.Tools.joomlanmsdvid);
+  $("#joomla-devicepixelratio").append(WebDeveloper.Locales.getString("joomladevicepixelratio")).on("click", WebDeveloper.Overlay.Tools.joomladevicepixelratio);
+  $("#joomla-realfavicongenerator").append(WebDeveloper.Locales.getString("joomlarealfavicongenerator")).on("click", WebDeveloper.Overlay.Tools.joomlarealfavicongenerator);
+  $("#joomla-iconogen").append(WebDeveloper.Locales.getString("joomlaiconogen")).on("click", WebDeveloper.Overlay.Tools.joomlaiconogen);  
+  $("#joomla-kangax").append(WebDeveloper.Locales.getString("joomlakangax")).on("click", WebDeveloper.Overlay.Tools.joomlakangax);  
+  $("#joomla-regexr").append(WebDeveloper.Locales.getString("joomlaregexr")).on("click", WebDeveloper.Overlay.Tools.joomlaregexr);  
+  $("#joomla-pcre").append(WebDeveloper.Locales.getString("joomlapcre")).on("click", WebDeveloper.Overlay.Tools.joomlapcre);  
+  $("#joomla-checkversionru").append(WebDeveloper.Locales.getString("joomlacheckversionru")).on("click", WebDeveloper.Overlay.Tools.joomlacheckversionru); 
+  
+ 
+/*****************************************************************************************************
+:'######::'##::: ##:'####:'########::'########::'########:'########::'######::
+'##... ##: ###:: ##:. ##:: ##.... ##: ##.... ##: ##.....::... ##..::'##... ##:
+ ##:::..:: ####: ##:: ##:: ##:::: ##: ##:::: ##: ##:::::::::: ##:::: ##:::..::
+. ######:: ## ## ##:: ##:: ########:: ########:: ######:::::: ##::::. ######::
+:..... ##: ##. ####:: ##:: ##.....::: ##.....::: ##...::::::: ##:::::..... ##:
+'##::: ##: ##:. ###:: ##:: ##:::::::: ##:::::::: ##:::::::::: ##::::'##::: ##:
+. ######:: ##::. ##:'####: ##:::::::: ##:::::::: ########:::: ##::::. ######::
+:......:::..::::..::....::..:::::::::..:::::::::........:::::..::::::......::: 
+******************************************************************************************************/
   
 
+  
+  
+  
+  
   WebDeveloper.Overlay.Tools.setupCustomTools();
 });
 
@@ -3589,6 +3613,49 @@ WebDeveloper.Overlay.Tools.joomlabase64de = function()
         });
 };
 
+
+WebDeveloper.Overlay.Tools.joomlanmsdvid = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://nmsdvid.com/snippets/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomladevicepixelratio = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://devicepixelratio.com/", featureItem);
+        });
+};
+
+WebDeveloper.Overlay.Tools.joomlaregexr = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.regexr.com/", featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlapcre = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://www.pcre.ru/eval/", featureItem);
+        });
+};
+
+
 WebDeveloper.Overlay.Tools.joomlakeywordtool = function()
 {
         var featureItem = $(this);
@@ -3688,6 +3755,32 @@ WebDeveloper.Overlay.Tools.joomlacodebeautify = function()
 };
 
 
+
+WebDeveloper.Overlay.Tools.joomlarealfavicongenerator = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://realfavicongenerator.net/", featureItem);
+        });
+};
+
+
+
+WebDeveloper.Overlay.Tools.joomlaiconogen = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://iconogen.com/", featureItem);
+        });
+};
+
+
+
+
 WebDeveloper.Overlay.Tools.joomlakraken = function()
 {
         var featureItem = $(this);
@@ -3739,6 +3832,18 @@ WebDeveloper.Overlay.Tools.joomlapunypng = function()
                 WebDeveloper.Overlay.openTab("http://www.punypng.com/", featureItem);
         });
 };
+
+WebDeveloper.Overlay.Tools.joomlakangax = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://kangax.github.io/html-minifier/", featureItem);
+        });
+};
+
+
 
 WebDeveloper.Overlay.Tools.joomlaysmush = function()
 {
@@ -4130,6 +4235,19 @@ WebDeveloper.Overlay.Tools.joomlacheckversion = function()
                 WebDeveloper.Overlay.openTab(getCurrentHostWithProtocol(tab.url) + "/language/en-GB/en-GB.xml", featureItem);
         });
 };
+
+
+WebDeveloper.Overlay.Tools.joomlacheckversionru = function()
+{
+        var featureItem = $(this);
+ 
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab(getCurrentHostWithProtocol(tab.url) + "/language/ru-RU/ru-RU.xml", featureItem);
+        });
+};
+
+
 
 WebDeveloper.Overlay.Tools.joomlaenjoycss = function()
 {
