@@ -3321,6 +3321,7 @@ $(function()
   $("#joomla-gtmetrix").append(WebDeveloper.Locales.getString("joomlagtmetrix")).on("click", WebDeveloper.Overlay.Tools.joomlagtmetrix);
   $("#joomla-perfmapzeman").append(WebDeveloper.Locales.getString("joomlaperfmapzeman")).on("click", WebDeveloper.Overlay.Tools.joomlaperfmapzeman);
   $("#joomla-joomsitechecker").append(WebDeveloper.Locales.getString("joomsitechecker")).on("click", WebDeveloper.Overlay.Tools.joomsitechecker);
+  $("#joomla-cameleo").append(WebDeveloper.Locales.getString("joomlacameleo")).on("click", WebDeveloper.Overlay.Tools.joomlacameleo);
 
 
 
@@ -3493,6 +3494,7 @@ WebDeveloper.Overlay.Tools.sitemap = function()
      WebDeveloper.Overlay.openTab(getCurrentHostWithProtocol(tab.url) + "/sitemap.html", featureItem);
  });
 };
+
 
 WebDeveloper.Overlay.Tools.joomsitechecker = function()
 {
@@ -4017,6 +4019,17 @@ WebDeveloper.Overlay.Tools.joomlaredbot = function()
         WebDeveloper.Overlay.getSelectedTab(function(tab)
         {
                 WebDeveloper.Overlay.openTab("https://redbot.org/?uri="   + tab.url, featureItem);
+        });
+};
+
+
+WebDeveloper.Overlay.Tools.joomlacameleo = function()
+{
+        var featureItem = $(this);
+
+        WebDeveloper.Overlay.getSelectedTab(function(tab)
+        {
+                WebDeveloper.Overlay.openTab("http://cameleo.ru/r?url="   + tab.url, featureItem);
         });
 };
 

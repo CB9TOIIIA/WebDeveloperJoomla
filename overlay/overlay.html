@@ -70,12 +70,23 @@
 
   <div id="joomla-chektoolbar" class="tab-pane">
 <ul class="list-unstyled">
- <iframe width="500px" height="200px" src="http://help.cb9t.ru/jversion.php?site=" frameborder="0"></iframe>
+<form name="sitejoomla" action="http://help.cb9t.ru/jversion.php" method="post" class="uk-form">
+    <div class="uk-form-row uk-form-icon">
+        <input type="text" class="" placeholder="Type domain (ex. joomla.org)" name="site"/>
+        <button type="submit" class="submit" name="submit">Detect</button>
+    </div>
+</form>
+
 </div>
 
   <div id="joomla-checksocialtoolbar" class="tab-pane">
 <ul class="list-unstyled">
- <iframe width="500px" height="200px" src="http://help.cb9t.ru/social.php?site=" frameborder="0"></iframe>
+ <form name="sitejoomla" action="http://help.cb9t.ru/social.php" method="post" class="uk-form">
+    <div class="uk-form-row uk-form-icon">
+        <input type="text" class="" placeholder="Type full URL" name="site"/>
+        <button type="submit" class="submit" name="submit">Detect</button>
+    </div>
+</form>
 </div>
 
 <div id="seo-menu" class="tab-pane">
@@ -174,6 +185,7 @@
 	</ul>
 <ul class="list-unstyled">
 		<center><span class="green"><label><span id="displayext">Tools</span></label></span><span class="rusiklabel">Инструменты</span></center>
+		<li id="joomla-cameleo"><label><span id="joomlacameleo">Anonymayzer (cameleo)</span></label></li>
 		<li id="joomla-unphp"><label><span id="joomlaunphp">PHP Decode (unphp)</span></label></li>
 		<li id="joomla-base64de"><label><span id="joomlabase64de">Base64Decode</span></label></li>
 		<li id="joomla-base64en"><label><span id="joomlabase64en">Base64Encode</span></label></li>
