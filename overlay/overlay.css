@@ -35,6 +35,7 @@ body, html { overflow: hidden; width: 650px; }
 
 #joomla-chektoolbar { background: url(images/joomfon.png)  bottom right no-repeat transparent; margin: 10px 0px 0px 20px;}
 #joomla-checksocialtoolbar { background: url(images/socialfon.png)  bottom right no-repeat transparent; margin: 10px 0px 0px 20px;}
+#joomla-checkreestrtoolbar { background: url(images/socialfon1.png)  bottom right no-repeat transparent; margin: 10px 0px 0px 20px;}
 
 #seo-menu ul li label span {font-size: 13px !important; line-height: 1 !important; font-weight: normal !important; color: #428bca !important; text-decoration: none; }
 #seo-menu ul li label span:hover {text-decoration: underline; cursor: pointer;}
